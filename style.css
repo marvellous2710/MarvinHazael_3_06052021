@@ -20,7 +20,7 @@ header{
 
 .search{
     padding-left: 45%;
-    background-color: rgb(240, 240, 240, 0.678);
+    background-color: rgba(207, 207, 207, 0.637);
 }
 
 .search input{
@@ -35,5 +35,22 @@ header{
     font-size: 20px;
 }
 
+/* RESERVATION */
 
+.reservation{
+    background-color: rgb(240, 240, 240, 0.678);
+    text-align: center;
+    padding-top: 20PX;
+}
+
+.reservation button{
+    margin: 20px 0 40px 0;
+    font-size: 15px;
+    border-radius: 40px;
+    padding: 20px 30px 20px 30px;
+    color: white;
+    background: linear-gradient(#db64e6, #b891e5);
+    border: none;
+    text-align: center;
+}
     
