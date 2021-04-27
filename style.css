@@ -15,7 +15,9 @@ header{
 } 
 
 .logo img{
-    padding-left: 35%;
+    text-align: center;
+    margin: auto;
+    display: flex; 
 }
 
 .search{
@@ -28,7 +30,7 @@ header{
     height: 50px;
     border: none;
     background-color: transparent;
-    font-size: 20PX;
+    font-size: 20px;
 }
 
 .search i{
@@ -137,4 +139,31 @@ header{
 
 footer{
     background-color: rgb(71, 71, 71);
+}
+
+footer img{
+    filter: invert(100%);
+    text-align: center;
+    margin: auto;
+    display: flex;
+    width: 10%;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+footer li{
+    margin: auto;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer i{
+    margin-right: 10px;
 }
