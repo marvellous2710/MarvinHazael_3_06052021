@@ -4,6 +4,7 @@ html, body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+
 /* HEADER */
 
 header{
@@ -105,6 +106,9 @@ header{
     justify-content: space-around;
 }
 
+.group-cards-1, .group-cards-2{
+    display: flex;
+}
 
 .cards{
     background-color: white;
@@ -112,7 +116,8 @@ header{
     height: 300px;
     border-radius: 20px; 
     box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);  
-    margin-bottom: 40px;
+    margin: 40px;
+    position: relative;
 }
 
 .cards img{
@@ -140,12 +145,22 @@ header{
 .texte i{
     margin-right: 20px;
     cursor: pointer;
+    font-size: 1.5rem;
 }
 
 .texte i:hover{
     background:linear-gradient(#ff79da, #9356dc);
 }
 
+.new{
+    background-color: #99e2d0;
+    color: #1b6150;
+    position: absolute;
+    padding: 10px;
+    border-radius: 5px;
+    right: 0;
+    margin: 1rem;
+}
 
 /* FOOTER */
 
