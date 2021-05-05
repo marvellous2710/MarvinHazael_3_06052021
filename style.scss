@@ -1,0 +1,195 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* HEADER */
+
+header{
+    width: auto;
+}
+
+.logo{
+    box-shadow: black 6px 6px 6px ;
+
+    img{
+        text-align: center;
+        margin: auto;
+        display: flex; 
+    }
+} 
+
+.search{
+    padding-left: 44%;
+    background-color: rgba(207, 207, 207, 0.637);
+
+    input{
+        width: 40%;
+        height: 50px;
+        border: none;
+        background-color: transparent;
+        font-size: 20px;
+    }
+
+    i{
+        font-size: 20px;
+    }
+}
+
+/* RESERVATION */
+
+.reservation{
+    background-color: rgb(240, 240, 240, 0.678);
+    text-align: center;
+    padding-top: 20PX;
+
+    button{
+        margin: 20px 0 40px 0;
+        font-size: 15px;
+        border-radius: 40px;
+        padding: 20px 30px 20px 30px;
+        color: white;
+        background: linear-gradient(#db64e6, #b891e5);
+        border: none;
+    }
+}
+
+/* FONCTIONNEMENT */
+
+.function{
+    text-align: center;
+
+    li{
+        margin: 20px 20PX 40px 0;
+        font-size: 15px;
+        border-radius: 20px;
+        padding: 20px 30px 20px 30px;
+        background: rgb(240, 240, 240, 0.678);
+        border: none;
+        box-shadow: rgba(0,0,0,0.2) 3px 3px 3px ;
+        width: 200px;
+        text-decoration: none;
+    }
+
+    i{
+        margin-right: 10px;
+    }
+
+    ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    
+}
+
+/* MENU RESTAURANT*/
+
+.restaurants{
+    background-color: rgb(240, 240, 240, 0.678);
+
+    h1{
+        text-align: center;
+    }
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.group-cards-1, .group-cards-2{
+    display: flex;
+}
+
+.cards{
+    background-color: white;
+    width: 400PX;
+    height: 300px;
+    border-radius: 20px; 
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);  
+    margin: 40px;
+    position: relative;
+
+    img{
+        width: 100%;
+        height: 80%;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+    }
+}
+
+.texte{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    line-height: 1px;
+    padding-left: 5px;
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    i{
+        margin-right: 20px;
+        cursor: pointer;
+        font-size: 1.5rem;
+
+        :hover{
+            background:linear-gradient(#ff79da, #9356dc);
+        }
+    }
+}
+
+.new{
+    background-color: #99e2d0;
+    color: #1b6150;
+    position: absolute;
+    padding: 10px;
+    border-radius: 5px;
+    right: 0;
+    margin: 1rem;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(71, 71, 71);
+
+    img{
+        filter: invert(100%);
+        text-align: center;
+        margin: auto;
+        display: flex;
+        width: 10%;
+    }
+
+    ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+
+    li{
+        margin: auto;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    i{
+        margin-right: 10px;
+    }
+}
