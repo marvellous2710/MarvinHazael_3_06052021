@@ -45,8 +45,11 @@ header {
   border-radius: 40px;
   padding: 20px 30px 20px 30px;
   color: white;
-  background: linear-gradient(#db64e6, #b891e5);
+  background-image: linear-gradient(#db64e6, #b891e5);
   border: none;
+}
+.reservation button :hover {
+  background-position: right;
 }
 
 /* FONCTIONNEMENT */
@@ -129,9 +132,6 @@ header {
   cursor: pointer;
   font-size: 1.5rem;
 }
-.texte i :hover {
-  background: linear-gradient(#ff79da, #9356dc);
-}
 
 .new {
   background-color: #99e2d0;
@@ -158,6 +158,7 @@ footer ul {
   display: flex;
   justify-content: center;
   list-style: none;
+  margin: 0;
 }
 footer li {
   margin: auto;
@@ -168,6 +169,35 @@ footer a {
 }
 footer i {
   margin-right: 10px;
+}
+
+@media all and (max-width: 550px) {
+  body {
+    width: auto;
+  }
+
+  .function ul {
+    flex-direction: column;
+  }
+
+  .cards {
+    width: auto;
+    height: 250px;
+  }
+
+  .group-cards-1, .group-cards-2 {
+    flex-direction: column;
+  }
+
+  .footer .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer ul {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
