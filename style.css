@@ -53,9 +53,6 @@ header {
 }
 
 /* FONCTIONNEMENT */
-.function {
-  text-align: center;
-}
 .function li {
   margin: 20px 20PX 40px 0;
   font-size: 15px;
@@ -83,9 +80,6 @@ header {
 /* MENU RESTAURANT*/
 .restaurants {
   background-color: rgba(240, 240, 240, 0.678);
-}
-.restaurants h1 {
-  text-align: center;
 }
 
 .menu {
@@ -183,34 +177,57 @@ footer i {
     width: auto;
   }
 
+  .function {
+    padding-top: 40px;
+  }
+  .function h1 {
+    padding-left: 15px;
+  }
   .function ul {
     flex-direction: column;
+    padding: 0;
+  }
+  .function li {
+    margin: 10px;
+  }
+
+  .restaurants {
+    padding-top: 40px;
+  }
+  .restaurants h1 {
+    margin: 0;
+    padding-left: 15px;
   }
 
   .cards {
-    width: auto;
+    width: 340px;
     height: 250px;
+  }
+  .cards img {
+    height: 70%;
   }
 
   .group-cards-1, .group-cards-2 {
     flex-direction: column;
   }
 
-  .footer .footer {
+  .footer {
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 15px 0 15px 0;
   }
   .footer ul {
     display: flex;
     flex-direction: column;
+    padding-left: 17px;
   }
   .footer li {
     margin-bottom: 5px;
   }
   .footer img {
     width: 100px;
-    margin-left: 25px;
+    margin-left: 4px;
   }
 }
 
