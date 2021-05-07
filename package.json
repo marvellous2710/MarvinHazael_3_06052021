@@ -1,7 +1,6 @@
 {
   "name": "sass-workshop",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,5 +9,15 @@
   "license": "ISC",
   "dependencies": {
     "sass": "^1.32.12"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marvellous2710/Oh-my-food.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marvellous2710/Oh-my-food/issues"
+  },
+  "homepage": "https://github.com/marvellous2710/Oh-my-food#readme",
+  "description": ""
 }

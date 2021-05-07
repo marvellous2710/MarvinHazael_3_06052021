@@ -20,9 +20,9 @@ header{
     img{
         text-align: center;
         margin: auto;
-        display: flex; 
+        display: flex;
     }
-} 
+}
 
 .search{
     padding-left: 44%;
@@ -94,7 +94,7 @@ header{
         text-decoration: none;
         color: black;
     }
-    
+
 }
 
 /* MENU RESTAURANT*/
@@ -122,8 +122,8 @@ header{
     background-color: white;
     width: 400PX;
     height: 300px;
-    border-radius: 20px; 
-    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);  
+    border-radius: 20px;
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
     margin: 40px;
     position: relative;
 
@@ -149,15 +149,16 @@ header{
     }
 
     i{
-        margin-right: 20px;
-        cursor: pointer;
         font-size: 1.5rem;
-    }    
+    }
 
-    // :hover{
-    //     background: $primary;
-    // }
+
 }
+
+.heart{
+    display: flex;
+}
+
 
 .new{
     background-color: #99e2d0;
@@ -173,14 +174,15 @@ header{
 
 footer{
     background-color: rgb(71, 71, 71);
-    
+
 
     img{
         filter: invert(100%);
         text-align: center;
         margin: auto;
         display: flex;
-        width: 10%;
+        width: 200px;
+        padding: 15px;
     }
 
     ul{
@@ -191,7 +193,7 @@ footer{
     }
 
     li{
-        margin: auto;
+        margin-right: 150px;
     }
 
     a{
@@ -204,6 +206,12 @@ footer{
     }
 }
 
+.menu_1{
+
+    margin: auto;
+}
+
+
 @media all and (max-width: 550px) {
     body{
         width: auto;
@@ -214,11 +222,11 @@ footer{
             flex-direction: column;
         }
     }
-    
+
     .cards{
         width: auto;
         height: 250px;
-        
+
     }
 
     .group-cards-1, .group-cards-2{
@@ -236,5 +244,14 @@ footer{
             display: flex;
             flex-direction: column;
         }
-    }  
+
+        li{
+            margin-bottom: 5px;
+        }
+
+        img{
+            width: 100px;
+            margin-left: 25px;
+        }
+    }
 }
