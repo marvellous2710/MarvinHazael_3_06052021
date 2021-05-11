@@ -111,6 +111,9 @@ header{
         color: black;
     }
 
+    h1{
+        text-align: center;
+    }
 }
 
 
@@ -118,6 +121,11 @@ header{
 
 .restaurants{
     background-color: rgb(240, 240, 240, 0.678);
+    padding-top: 20px;
+
+    h1{
+        text-align: center;
+    }
 }
 
 .menu{
@@ -155,6 +163,8 @@ header{
     margin-left: 10px;
     line-height: 1px;
     padding-left: 5px;
+    padding-right: 20px;
+    margin-top: -10px;
 
     a{
         text-decoration: none;
@@ -164,16 +174,35 @@ header{
     i{
         font-size: 1.5rem;
     }
+}
 
+.heart{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.2s;
+   
+}
 
+.heart{
+    position: relative;
+}
+
+.heart:hover .heart2{
+    opacity: 1;
+   
 }
 
 .heart2{
     position: absolute;
-    top: 0;
-    z-index: 100;
+    top: 0; bottom: 0; left: 0; right: 0;
+    opacity: 0; transition: all 1.5s;
+
 }
 
+.fas.fa-heart {
+    color: red;
+}
 
 .new{
     background-color: #99e2d0;
@@ -241,7 +270,7 @@ footer{
         padding-top: 40px;
 
         h1{
-            padding-left: 15px;
+            
         }
 
         ul{
