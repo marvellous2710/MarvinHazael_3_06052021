@@ -21,9 +21,9 @@ header {
 .search {
   text-align: center;
   background-color: rgba(207, 207, 207, 0.637);
+  padding-left: 75px;
 }
 .search input {
-  width: 40%;
   height: 50px;
   border: none;
   background-color: transparent;
@@ -47,9 +47,7 @@ header {
   color: white;
   background-image: linear-gradient(#db64e6, #b891e5);
   border: none;
-}
-.reservation button :hover {
-  background-position: right;
+  box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* FONCTIONNEMENT */
@@ -88,12 +86,19 @@ header {
   justify-content: center;
   list-style: none;
 }
+.function ul :hover {
+  background: #f8ecff;
+}
 .function a {
   text-decoration: none;
   color: black;
 }
 .function h1 {
-  text-align: center;
+  padding-left: 15%;
+}
+
+.fas.fa-mobile-alt:hover, .fas.fa-list-ul:hover, .fas.fa-store:hover {
+  color: #9400FF;
 }
 
 /* MENU RESTAURANT*/
@@ -102,7 +107,7 @@ header {
   padding-top: 20px;
 }
 .restaurants h1 {
-  text-align: center;
+  padding-left: 15%;
 }
 
 .menu {
@@ -176,7 +181,7 @@ header {
 }
 
 .fas.fa-heart {
-  color: red;
+  color: violet;
 }
 
 .new {
@@ -218,10 +223,6 @@ footer i {
   margin-right: 10px;
 }
 
-.menu_1 {
-  margin: auto;
-}
-
 @media all and (max-width: 550px) {
   body {
     width: auto;
@@ -242,6 +243,10 @@ footer i {
   .function li {
     margin: 10px;
   }
+  .function h1 {
+    margin: 0;
+    padding-left: 15px;
+  }
 
   .restaurants {
     padding-top: 40px;
@@ -257,6 +262,10 @@ footer i {
   }
   .cards img {
     height: 70%;
+  }
+
+  .texte {
+    margin-top: 0;
   }
 
   .group-cards-1, .group-cards-2 {

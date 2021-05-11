@@ -27,9 +27,9 @@ header{
 .search{
     text-align: center;
     background-color: rgba(207, 207, 207, 0.637);
+    padding-left: 75px;
 
     input{
-        width: 40%;
         height: 50px;
         border: none;
         background-color: transparent;
@@ -56,10 +56,7 @@ header{
         color: white;
         background-image: $primary;
         border: none;
-
-        :hover{
-            background-position: right;
-        }
+        box-shadow: 8px 8px 10px 0 rgba(0,0,0,0.5);;
     }
 }
 
@@ -93,17 +90,23 @@ header{
         width: 200px;
         text-decoration: none;
         position: relative;
+
     }
 
     i{
         margin-right: 10px;
         font-size: 20px;
+
     }
 
     ul{
         display: flex;
         justify-content: center;
         list-style: none;
+
+        :hover{
+            background: rgb(248, 236, 255);
+        }
     }
 
     a{
@@ -112,8 +115,12 @@ header{
     }
 
     h1{
-        text-align: center;
+        padding-left: 15%;
     }
+}
+
+.fas.fa-mobile-alt:hover, .fas.fa-list-ul:hover, .fas.fa-store:hover{
+    color: #9400FF;
 }
 
 
@@ -124,7 +131,7 @@ header{
     padding-top: 20px;
 
     h1{
-        text-align: center;
+        padding-left: 15%;
     }
 }
 
@@ -201,7 +208,7 @@ header{
 }
 
 .fas.fa-heart {
-    color: red;
+    color: violet;
 }
 
 .new{
@@ -250,10 +257,7 @@ footer{
     }
 }
 
-.menu_1{
 
-    margin: auto;
-}
 
 
 @media all and (max-width: 550px) {
@@ -269,9 +273,6 @@ footer{
     .function{
         padding-top: 40px;
 
-        h1{
-            
-        }
 
         ul{
             flex-direction: column;
@@ -280,6 +281,11 @@ footer{
 
         li{
             margin: 10px;
+        }
+
+        h1{
+            margin: 0;
+            padding-left: 15px;
         }
     }
 
@@ -301,6 +307,9 @@ footer{
         }
     }
 
+    .texte{
+        margin-top: 0;
+    }
     .group-cards-1, .group-cards-2{
         flex-direction: column;
     }
