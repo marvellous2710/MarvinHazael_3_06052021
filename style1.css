@@ -51,6 +51,10 @@ section {
   justify-content: space-between;
 }
 
+.txt-menu {
+  padding-left: 15px;
+}
+
 article {
   border-radius: 20px;
   margin-bottom: 10px;
@@ -60,10 +64,14 @@ article {
   box-shadow: 3px 3px 10px #dedada;
   justify-content: space-between;
   overflow: hidden;
+  z-index: 1;
 }
 article:hover .animation {
   transform: translate(-80px, 0);
   transition: transform 700ms ease-in-out;
+}
+article:hover .check-valid i {
+  transform: rotate(360deg);
 }
 article h4 {
   margin-top: 5px;
@@ -90,8 +98,9 @@ article h4 {
   padding-right: 50px;
 }
 
-.txt-menu {
-  padding-left: 15px;
+i {
+  font-size: 25px;
+  transition: all 2s ease-in-out;
 }
 
 /* BOUTON VIOLET */

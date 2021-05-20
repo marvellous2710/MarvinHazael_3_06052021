@@ -64,6 +64,10 @@ section{
     justify-content: space-between;
 }
 
+.txt-menu{
+    padding-left: 15px;
+}
+
 article{
     
     border-radius: 20px;
@@ -74,6 +78,7 @@ article{
     box-shadow: 3px 3px 10px #dedada;
     justify-content: space-between;
     overflow: hidden;
+    z-index: 1;
     
     
     &:hover .animation{
@@ -81,6 +86,10 @@ article{
         transition: transform 700ms ease-in-out ;
     }
     
+    &:hover .check-valid i{
+        transform: rotate(360deg);
+    }
+
     h4{
         margin-top: 5px;
     }
@@ -91,13 +100,14 @@ article{
 .animation{
     display: flex;
     height: 100%;
-    width: 80px;
+    width: 80px;  
 }
 
 .menu-price{
     display: flex;
     align-items: flex-end;
     margin: 0 30px 30px 30px;
+    
 }
 
 .check-valid{
@@ -109,9 +119,11 @@ article{
     padding-right: 50px; 
 }
 
-.txt-menu{
-    padding-left: 15px;
+i{
+    font-size: 25px;
+    transition: all 2s ease-in-out;
 }
+
 
 /* BOUTON VIOLET */
 
