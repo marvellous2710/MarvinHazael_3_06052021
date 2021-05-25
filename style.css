@@ -4,6 +4,66 @@ html, body {
   font-family: "Trebuchet MS", sans-serif;
 }
 
+/* LOADER PAGE */
+.load-spinner {
+  animation: load-spinner 4s forwards;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+.loader {
+  background: linear-gradient(#db64e6, #b891e5);
+  top: 50%;
+  left: 43%;
+  z-index: 3;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 10px solid transparent;
+  border-top-color: white;
+  position: fixed;
+  animation: loading 2s linear infinite;
+}
+.loader ::before, .loader ::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.loader span {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  color: #FFF;
+  text-align: center;
+  line-height: 200px;
+  animation: txt 2s linear infinite;
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes txt {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes load-spinner {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+  }
+}
 /* HEADER */
 header {
   width: auto;

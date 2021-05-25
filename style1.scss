@@ -81,14 +81,30 @@ article{
     
     &:hover .animation{
         transform: translate(-80px,0);
-        transition: transform 700ms ease-in-out ;
+        transition: transform 700ms ease-in-out;
     }
     
     &:hover .check-valid i{
-        transform: rotate(360deg);
+        -webkit-animation: spin 1s linear;
+        -moz-animation: spin 1s linear;
+        animation: spin 1s linear;
     }
     
 }
+
+@-webkit-keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
+
+
 
 @keyframes anim-article{
     from{
@@ -103,9 +119,14 @@ article{
 .txt-menu{
     padding-left: 15px;
     overflow: hidden;
-    text-overflow: ellipsis;
     white-space: nowrap;
-    line-height: 10px;
+    line-height: 20px;
+
+    p{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+    }
 }
 
 .animation{
@@ -129,6 +150,7 @@ article{
     background: #71d7be;
     color: white;
     padding-right: 50px; 
+    
 }
 
 i{
