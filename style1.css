@@ -26,6 +26,13 @@ header .cover-img img {
   display: flex;
 }
 
+.top {
+  display: fixed;
+}
+.top i {
+  visibility: hidden;
+}
+
 /* MAIN */
 main img {
   width: 100%;
@@ -186,17 +193,24 @@ i {
 /* BOUTON VIOLET */
 .btn {
   text-align: center;
+  transition: 0.5s;
+}
+.btn :hover {
+  box-shadow: 0 5px 15px 0 #9d9d9d;
 }
 
 button {
+  width: 200px;
   margin: 20px 0 40px 0;
   font-size: 15px;
   border-radius: 40px;
   padding: 20px 30px 20px 30px;
   color: white;
   border: none;
-  background-image: linear-gradient(#db64e6, #b891e5);
+  background-image: linear-gradient(to right, #db64e6, #b891e5);
   box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: 1s;
 }
 
 /* FOOTER */
@@ -238,7 +252,17 @@ footer i {
   margin-right: 10px;
 }
 
+/* MOBILE */
 @media all and (max-width: 550px) {
+  .top i {
+    visibility: visible;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 20px;
+    color: black;
+  }
+
   .article-container {
     flex-direction: column;
   }
