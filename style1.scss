@@ -124,13 +124,14 @@ article{
     background: white;
     border-radius: 20px;
     margin-bottom: 10px;
-    width: 350px;
-    height: 90px;
+    width: 340px;
+    height: 75px;
     display: flex;
     box-shadow: 3px 3px 10px #dedada;
     justify-content: space-between;
     overflow: hidden;
     animation: anim-article 6s;
+    cursor: pointer;
     
     
     &:hover .animation{
@@ -176,9 +177,15 @@ article{
     white-space: nowrap;
     line-height: 20px;
 
+    h4{
+        margin-top: 15PX;
+        margin-bottom: 5px;
+    }
+
     p{
         overflow: hidden;
         text-overflow: ellipsis;
+        margin-top: 0;
     }
 }
 
@@ -192,8 +199,7 @@ article{
 .menu-price{
     display: flex;
     align-items: flex-end;
-    margin: 0 30px 30px 30px;
-    
+    margin: 0 30px 15px 30px; 
 }
 
 .check-valid{
@@ -202,8 +208,7 @@ article{
     padding: 20px;
     background: #71d7be;
     color: white;
-    padding-right: 50px; 
-    
+    padding-right: 50px;   
 }
 
 i{
@@ -216,7 +221,7 @@ i{
 
 .btn{
     text-align: center;
-    transition: 0.5s;
+    
 
     :hover{
         box-shadow: 0 5px 15px 0 #9d9d9d;    
