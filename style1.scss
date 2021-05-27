@@ -114,16 +114,17 @@ h2{
 }
 
 /* ANIMATION ARTICLE */
-.article-container{
-    display: flex;
-    justify-content: space-between;
-}
 
+.menu-container{
+    display: flex;
+    justify-content: space-around;
+}
 
 article{
     background: white;
     border-radius: 20px;
     margin-bottom: 10px;
+    
     width: 340px;
     height: 75px;
     display: flex;
@@ -303,7 +304,7 @@ footer{
         color: black;
     }
 
-    .article-container{
+    .menu-container{
         flex-direction: column;
     }
 

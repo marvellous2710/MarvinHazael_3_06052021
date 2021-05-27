@@ -102,9 +102,9 @@ h2 {
 }
 
 /* ANIMATION ARTICLE */
-.article-container {
+.menu-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 article {
@@ -268,7 +268,7 @@ footer i {
     color: black;
   }
 
-  .article-container {
+  .menu-container {
     flex-direction: column;
   }
 
