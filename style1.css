@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* HEADER */
@@ -54,7 +54,7 @@ section {
 }
 
 h2 {
-  border-bottom: solid 3px #71d7be;
+  border-bottom: solid 3px #99E2D0;
   width: 60px;
   font-weight: normal;
 }
@@ -117,12 +117,17 @@ article {
   box-shadow: 3px 3px 10px #dedada;
   justify-content: space-between;
   overflow: hidden;
-  animation: anim-article 6s;
+  animation: anim-article 4s;
   cursor: pointer;
 }
+article span {
+  margin: 40px 40px 40px 20px;
+}
 article:hover .animation {
-  transform: translate(-80px, 0);
-  transition: transform 700ms ease-in-out;
+  animation: anim-valid 2s forwards;
+}
+article:hover .check-valid {
+  animation: anim-valid 2s forwards;
 }
 article:hover .check-valid i {
   -webkit-animation: spin 1s linear;
@@ -130,6 +135,16 @@ article:hover .check-valid i {
   animation: spin 1s linear;
 }
 
+@keyframes anim-valid {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 80px;
+    opacity: 1;
+  }
+}
 @-webkit-keyframes spin {
   100% {
     -webkit-transform: rotate(360deg);
@@ -158,37 +173,37 @@ article:hover .check-valid i {
   overflow: hidden;
   white-space: nowrap;
   line-height: 20px;
+  width: 100%;
 }
 .txt-menu h4 {
-  margin-top: 15PX;
+  margin-top: 15px;
   margin-bottom: 5px;
+  font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 18px;
 }
 .txt-menu p {
   overflow: hidden;
   text-overflow: ellipsis;
   margin-top: 0;
+  font-size: 14px;
 }
 
 .animation {
   background: white;
   display: flex;
   height: 100%;
-  width: 80px;
-}
-
-.menu-price {
-  display: flex;
-  align-items: flex-end;
-  margin: 0 30px 15px 30px;
+  width: 0px;
+  opacity: 0;
 }
 
 .check-valid {
   display: flex;
   align-items: center;
   padding: 20px;
-  background: #71d7be;
+  background: #99E2D0;
   color: white;
-  padding-right: 50px;
 }
 
 i {
@@ -229,7 +244,7 @@ body {
 }
 
 footer {
-  background-color: #474747;
+  background-color: #383838;
 }
 footer img {
   filter: invert(100%);
@@ -241,10 +256,13 @@ footer img {
 }
 footer ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   list-style: none;
   margin: 0;
   padding-bottom: 20px;
+}
+footer ul :hover {
+  color: #99E2D0;
 }
 footer li {
   margin-right: 150px;
@@ -281,6 +299,12 @@ footer i {
     flex-direction: column;
     width: 100%;
     padding: 15px 0 15px 0;
+  }
+  .footer i {
+    font-size: 15px;
+  }
+  .footer .fas.fa-hands-helping {
+    margin-right: 4px;
   }
   .footer ul {
     display: flex;
