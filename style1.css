@@ -117,7 +117,6 @@ article {
   box-shadow: 3px 3px 10px #dedada;
   justify-content: space-between;
   overflow: hidden;
-  animation: anim-article 4s;
   cursor: pointer;
 }
 article span {
@@ -160,12 +159,52 @@ article:hover .check-valid i {
     -webkit-transform: rotate(360deg);
   }
 }
+.anim-1 {
+  animation: anim-article 0.3s;
+}
+
+.anim-2 {
+  animation: anim-article 0.5s;
+}
+
+.anim-3 {
+  animation: anim-article 0.7s;
+}
+
+.anim-4 {
+  animation: anim-article 0.9s;
+}
+
+.anim-5 {
+  animation: anim-article 1.1s;
+}
+
+.anim-6 {
+  animation: anim-article 1.3s;
+}
+
+.anim-7 {
+  animation: anim-article 1.5s;
+}
+
+.anim-8 {
+  animation: anim-article 1.7s;
+}
+
+.anim-9 {
+  animation: anim-article 1.8s;
+}
+
+.anim-10 {
+  animation: anim-article 2s;
+}
+
 @keyframes anim-article {
   from {
-    opacity: 0;
+    transform: scale(0.1);
   }
   to {
-    opacity: 1;
+    transform: scale(1);
   }
 }
 .txt-menu {
