@@ -94,6 +94,7 @@ header{
 }
 
 .logo{
+    padding: 15px;
     box-shadow: black 6px 6px 6px ;
 
     img{
@@ -280,12 +281,13 @@ button:hover{
     }
 }
 
+/* COEUR J'AIME */
+
 .heart{
     position: relative;
     cursor: pointer;
     overflow: hidden;
-    transition: all 0.2s;
-   
+    transition: all 0.2s; 
 }
 
 .heart{
@@ -293,8 +295,7 @@ button:hover{
 }
 
 .heart:hover .heart2{
-    opacity: 1;
-   
+    opacity: 1;  
 }
 
 .heart2{
@@ -316,7 +317,7 @@ button:hover{
 }
 
 .new{
-    background-color: #99e2d0;
+    background-color: $secondary;
     color: #1b6150;
     position: absolute;
     padding: 10px;
@@ -367,10 +368,46 @@ footer{
     }
 }
 
+/* TABLETTE */
+@media all and (max-width: 1000px){
 
 
+    .function{
 
-@media all and (max-width: 767px) {
+        ul{
+            padding-left: 25px;
+        }
+
+        li{
+            width: 24%;
+            white-space: nowrap;
+        }
+    }
+    .group-cards-1{
+        width: 95%;
+    }
+
+    .group-cards-2{
+        width: 95%;
+    }
+
+
+    footer ul{
+        padding-left: 70px;
+        margin-top: 20px;
+    }
+    
+    footer li{
+        margin-right: 65px;
+        white-space: nowrap;
+    }
+
+}
+
+/* MOBILE*/
+
+
+@media all and (max-width: 760px) {
     body{
         width: auto;
     }
@@ -385,17 +422,28 @@ footer{
         padding: 10px;
     }
 
+    .cards{
+        margin-left: 10px;
+    }
+
     .function{
         padding-top: 40px;
         padding-bottom: 25px;
 
+        i{
+            margin-right: 45px;
+        }
+
         ul{
             flex-direction: column;
             padding-bottom: 20px;
+            padding-left: 10px;          
         }
 
         li{
             margin: 10px;
+            width: 75%;
+            padding: 25px 30px 25px 30px;
         }
 
         h1{
@@ -461,5 +509,7 @@ footer{
         }
     }
 }
+
+
 
 

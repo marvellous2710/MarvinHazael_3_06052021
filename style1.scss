@@ -82,8 +82,7 @@ h2{
     position: relative;
     cursor: pointer;
     overflow: hidden;
-    transition: all 0.2s;
-   
+    transition: all 0.2s;  
 }
 
 .heart{
@@ -92,14 +91,12 @@ h2{
 
 .heart:hover .heart2{
     opacity: 1;
-   
 }
 
 .heart2{
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
     opacity: 0; transition: all 1.5s;
-
 }
 
 .fas.fa-heart {
@@ -121,17 +118,22 @@ h2{
 }
 
 article{
-    background: white;
+    background: rgba(255, 255, 255, 0.712);
     border-radius: 20px;
     margin-bottom: 10px;
     width: 340px;
     height: 75px;
     display: flex;
-    box-shadow: 3px 3px 10px #dedada;
+    box-shadow: -1px -1px 8px rgba(110, 110, 110, 0.8);
     justify-content: space-between;
     overflow: hidden;
-    //animation: anim-article 4s;
     cursor: pointer;
+    
+
+    &:hover {
+        box-shadow: 1px 1px 8px rgba(110, 110, 110, 0.8);   
+    }
+    
     
     span{
         margin: 40px 40px 40px 20px;
@@ -230,8 +232,6 @@ article{
 
 }
 
-
-
 .txt-menu{
     padding-left: 15px;
     overflow: hidden;
@@ -318,6 +318,9 @@ body{
 footer{
     background-color: rgb(56, 56, 56);
 
+    i{
+        font-size: 15px;    
+    }
 
     img{
         filter: invert(100%);
@@ -353,6 +356,27 @@ footer{
         margin-right: 10px;
     }
 }
+
+
+/* TABLETTE */
+@media all and (max-width: 890px){
+    .menu-container{
+        flex-wrap: wrap;
+    }
+
+    footer ul{
+        padding-left: 70px;
+        margin-top: 20px;
+    }
+    
+    footer li{
+        margin-right: 65px;
+        white-space: nowrap;
+    }
+
+    
+}
+
 
 
 
@@ -405,4 +429,4 @@ footer{
             margin-left: 4px;
         }
     }
-    }
+}

@@ -78,6 +78,7 @@ header {
 }
 
 .logo {
+  padding: 15px;
   box-shadow: black 6px 6px 6px;
 }
 .logo img {
@@ -236,6 +237,7 @@ button:hover {
   font-size: 1.5rem;
 }
 
+/* COEUR J'AIME */
 .heart {
   position: relative;
   cursor: pointer;
@@ -273,7 +275,7 @@ button:hover {
 }
 
 .new {
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   color: #1b6150;
   position: absolute;
   padding: 10px;
@@ -315,7 +317,36 @@ footer i {
   margin-right: 10px;
 }
 
-@media all and (max-width: 767px) {
+/* TABLETTE */
+@media all and (max-width: 1000px) {
+  .function ul {
+    padding-left: 25px;
+  }
+  .function li {
+    width: 24%;
+    white-space: nowrap;
+  }
+
+  .group-cards-1 {
+    width: 95%;
+  }
+
+  .group-cards-2 {
+    width: 95%;
+  }
+
+  footer ul {
+    padding-left: 70px;
+    margin-top: 20px;
+  }
+
+  footer li {
+    margin-right: 65px;
+    white-space: nowrap;
+  }
+}
+/* MOBILE*/
+@media all and (max-width: 760px) {
   body {
     width: auto;
   }
@@ -330,16 +361,26 @@ footer i {
     padding: 10px;
   }
 
+  .cards {
+    margin-left: 10px;
+  }
+
   .function {
     padding-top: 40px;
     padding-bottom: 25px;
   }
+  .function i {
+    margin-right: 45px;
+  }
   .function ul {
     flex-direction: column;
     padding-bottom: 20px;
+    padding-left: 10px;
   }
   .function li {
     margin: 10px;
+    width: 75%;
+    padding: 25px 30px 25px 30px;
   }
   .function h1 {
     margin: 0;

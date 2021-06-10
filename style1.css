@@ -108,16 +108,19 @@ h2 {
 }
 
 article {
-  background: white;
+  background: rgba(255, 255, 255, 0.712);
   border-radius: 20px;
   margin-bottom: 10px;
   width: 340px;
   height: 75px;
   display: flex;
-  box-shadow: 3px 3px 10px #dedada;
+  box-shadow: -1px -1px 8px rgba(110, 110, 110, 0.8);
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
+}
+article:hover {
+  box-shadow: 1px 1px 8px rgba(110, 110, 110, 0.8);
 }
 article span {
   margin: 40px 40px 40px 20px;
@@ -285,6 +288,9 @@ body {
 footer {
   background-color: #383838;
 }
+footer i {
+  font-size: 15px;
+}
 footer img {
   filter: invert(100%);
   text-align: center;
@@ -314,6 +320,22 @@ footer i {
   margin-right: 10px;
 }
 
+/* TABLETTE */
+@media all and (max-width: 890px) {
+  .menu-container {
+    flex-wrap: wrap;
+  }
+
+  footer ul {
+    padding-left: 70px;
+    margin-top: 20px;
+  }
+
+  footer li {
+    margin-right: 65px;
+    white-space: nowrap;
+  }
+}
 /* MOBILE */
 @media all and (max-width: 550px) {
   .top i {
