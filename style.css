@@ -361,10 +361,6 @@ footer i {
     padding: 10px;
   }
 
-  .cards {
-    margin-left: 10px;
-  }
-
   .function {
     padding-top: 40px;
     padding-bottom: 25px;
@@ -379,7 +375,7 @@ footer i {
   }
   .function li {
     margin: 10px;
-    width: 75%;
+    width: auto;
     padding: 25px 30px 25px 30px;
   }
   .function h2 {
@@ -409,6 +405,7 @@ footer i {
 
   .group-cards-1, .group-cards-2 {
     flex-direction: column;
+    align-items: center;
   }
 
   .footer {
@@ -434,6 +431,12 @@ footer i {
   .footer img {
     width: 100px;
     margin-left: 4px;
+  }
+}
+@media all and (max-width: 355px) {
+  .cards {
+    width: 300px;
+    height: 220px;
   }
 }
 
