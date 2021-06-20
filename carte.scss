@@ -373,8 +373,6 @@ footer{
         margin-right: 65px;
         white-space: nowrap;
     }
-
-    
 }
 
 
@@ -429,4 +427,10 @@ footer{
             margin-left: 4px;
         }
     }
+}
+
+@media all and (max-width: 355px){
+    article {
+    width: 280px;
+}
 }
