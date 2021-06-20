@@ -171,7 +171,7 @@ button:hover {
   text-decoration: none;
   color: black;
 }
-.function h1 {
+.function h2 {
   padding-left: 15%;
 }
 
@@ -184,7 +184,7 @@ button:hover {
   background-color: rgba(240, 240, 240, 0.678);
   padding-top: 20px;
 }
-.restaurants h1 {
+.restaurants h2 {
   padding-left: 15%;
 }
 
@@ -224,7 +224,7 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   margin-left: 10px;
-  line-height: 1px;
+  line-height: 5px;
   padding-left: 5px;
   padding-right: 20px;
   margin-top: -10px;
@@ -382,7 +382,7 @@ footer i {
     width: 75%;
     padding: 25px 30px 25px 30px;
   }
-  .function h1 {
+  .function h2 {
     margin: 0;
     padding-left: 15px;
   }
@@ -390,7 +390,7 @@ footer i {
   .restaurants {
     padding-top: 40px;
   }
-  .restaurants h1 {
+  .restaurants h2 {
     margin: 0;
     padding-left: 15px;
   }

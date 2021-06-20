@@ -177,14 +177,11 @@ button:hover{
         width: 200px;
         text-decoration: none;
         position: relative;
-        
-
     }
 
     i{
         margin-right: 10px;
         font-size: 20px;
-
     }
 
     ul{
@@ -207,7 +204,7 @@ button:hover{
         color: black;
     }
 
-    h1{
+    h2{
         padding-left: 15%;
     }
 }
@@ -223,7 +220,7 @@ button:hover{
     background-color: rgb(240, 240, 240, 0.678);
     padding-top: 20px;
 
-    h1{
+    h2{
         padding-left: 15%;
     }
 }
@@ -266,7 +263,7 @@ button:hover{
     justify-content: space-between;
     align-items: center;
     margin-left: 10px;
-    line-height: 1px;
+    line-height: 5px;
     padding-left: 5px;
     padding-right: 20px;
     margin-top: -10px;
@@ -446,7 +443,7 @@ footer{
             padding: 25px 30px 25px 30px;
         }
 
-        h1{
+        h2{
             margin: 0;
             padding-left: 15px;
         }
@@ -455,7 +452,7 @@ footer{
     .restaurants{
         padding-top: 40px;
 
-        h1{
+        h2{
             margin: 0;
             padding-left: 15px;
         }
