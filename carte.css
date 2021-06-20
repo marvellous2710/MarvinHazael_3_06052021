@@ -26,9 +26,6 @@ header .cover-img img {
   display: flex;
 }
 
-.top {
-  display: fixed;
-}
 .top i {
   visibility: hidden;
 }
